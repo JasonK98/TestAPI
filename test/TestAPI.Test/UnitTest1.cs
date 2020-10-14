@@ -4,6 +4,16 @@ using TestAPI.Controllers;
 
 namespace TestAPI.Test
 {
+    public class Customer {
+        public int Id;
+        public string Name;
+
+        public Customer( int id, string name ) {
+            Id = id;
+            Name = name;
+        }
+    }
+
     public class UnitTest1
     {
 
@@ -14,7 +24,9 @@ namespace TestAPI.Test
         {
             // Create empty json file of expected response obviosuly this will have to be the same
             // need to think about this for future.
-            var returnValue = controller.Get();
+            Customer actual = new Customer ( 1, "John" );
+            Customer expected = new Customer ( 2, "John" );
+            Assert.Equal( expected.Id, actual.Id );
         }
 
         [Fact]
