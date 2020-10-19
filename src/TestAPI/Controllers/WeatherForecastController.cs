@@ -24,9 +24,9 @@ namespace TestAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public ExampleJson Get()
         {
-            var rng = new Random();
+            //var rng = new Random(); 
             // return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             // {
             //     Date = DateTime.Now.AddDays(index),
@@ -35,7 +35,12 @@ namespace TestAPI.Controllers
             // })
             // .ToArray();
             // Return JSON Object as an example
-            return { id: '1', name: 'Jason Kirk', location: 'Fife, Scotland', age: 21 } 
+            return new ExampleJson{
+                Id = 1,
+                Name = "Jason Kirk",
+                Location = "Fife, Scotland",
+                Age = 21
+            };
         }
     }
 }
