@@ -36,10 +36,10 @@ namespace TestAPI.Controllers
             // .ToArray();
             // Return JSON Object as an example
             return new ExampleJson{
-                Id = 1,
-                Name = "Jason Kirk",
+                Id = 101,
+                Name = "Gene Hunt",
                 Location = "Fife, Scotland",
-                Age = 21
+                Age = 105
             };
         }
     }
