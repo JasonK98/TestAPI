@@ -37,7 +37,7 @@ namespace TestAPI.Controllers
             // Return JSON Object as an example
             return new ExampleJson{
                 Id = 101,
-                Name = "Nicky Sturgeon",
+                Name = "Jason Kirk",
                 Location = "Fife, Scotland",
                 Age = 105
             };
