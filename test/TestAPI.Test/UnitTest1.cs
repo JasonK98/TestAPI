@@ -24,7 +24,7 @@ namespace TestAPI.Test
         {
             // Create empty json file of expected response obviosuly this will have to be the same
             // need to think about this for future.
-            Customer actual = new Customer ( 1, "Jason" );
+            Customer actual = new Customer ( 2, "Jason" );
             Customer expected = new Customer ( 1, "Jason" );
             Assert.Equal( expected.Id, actual.Id );
         }
