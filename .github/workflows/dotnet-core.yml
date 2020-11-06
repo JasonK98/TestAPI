@@ -1,4 +1,4 @@
-name: .NET Core
+name: TestAPI - Build & Test
 
 on:
   push:
@@ -20,6 +20,6 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build
-      run: cd src/TestAPI.Test && dotnet build --configuration Release --no-restore
+      run: cd src/TestAPI && dotnet build --configuration Release --no-restore
     - name: Test
-      run: cd test/TestAPI && dotnet test --no-restore --verbosity normal
+      run: cd test/TestAPI.Test && dotnet test --no-restore --verbosity normal
